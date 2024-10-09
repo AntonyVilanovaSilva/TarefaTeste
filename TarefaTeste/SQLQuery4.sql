@@ -1,0 +1,6 @@
+SELECT TOP (1000) [ID]
+      ,[Descricao]
+      ,[Data]
+      ,[IDUsuario]
+      ,[IDStatusTarefas]
+  FROM [DBTarefaTeste].[dbo].[Tarefas]

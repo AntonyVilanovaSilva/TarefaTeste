@@ -1,0 +1,50 @@
+﻿@model TarefaTeste.Models.Tarefas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Tarefas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusTarefa.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusTarefa.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuário.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuário.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Voltar para a lista", "Index")
+</p>
